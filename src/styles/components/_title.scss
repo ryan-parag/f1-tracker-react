@@ -1,0 +1,9 @@
+.title {
+  background: $f1-hivis-white;
+  display: block;
+  width: 100%;
+  text-align:center;
+  &__body {
+    padding: 1rem;
+  }
+}
