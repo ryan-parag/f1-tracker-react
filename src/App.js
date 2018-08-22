@@ -13,10 +13,15 @@ class App extends React.Component {
     const api_call = await fetch(`http://ergast.com/api/f1/2018/drivers/alonso.json`);
     const data = await api_call.json();
   }
+  onUpdate = (val) => {
+    this.setState({
+      givenName: val
+    })
+  }
   render() {
     return (
       <div className="card">
-        <Title />
+        <Title onUpdate={this.onUpdate} />
         <span></span>
       </div>
     );
